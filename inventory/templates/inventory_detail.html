@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ inventory.name }}</title>
+</head>
+<body>
+    <h1>{{ inventory.name }}</h1>
+    <p><strong>Description:</strong> {{ inventory.description }}</p>
+    <p><strong>Note:</strong> {{ inventory.note }}</p>
+    <p><strong>Stock:</strong> {{ inventory.stock }}</p>
+    <p><strong>Supplier:</strong> {{ inventory.supplier.name }}</p>
+    <p><strong>Availability:</strong>
+        {% if inventory.availability %} Available {% else %} Out of Stock {% endif %}
+    </p>
+    <img src="https://via.placeholder.com/150" alt="Item Thumbnail">
+    <br><a href="{% url 'inventory-list' %}">Back to Inventory</a>
+</body>
+</html>

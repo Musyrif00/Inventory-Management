@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inventory List</title>
+</head>
+<body>
+    <h1>Inventory List</h1>
+    <ul>
+        {% for inventory in inventories %}
+            <li>
+                <a href="{% url 'inventory-detail' inventory.id %}">{{ inventory.name }}</a> -
+                Supplier: {{ inventory.supplier.name }} -
+                {% if inventory.availability %} Available {% else %} Out of Stock {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
