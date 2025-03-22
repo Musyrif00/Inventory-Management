@@ -20,7 +20,7 @@ cd inventory_project
 
 ### Create & Activate a Virtual Environment
 ```sh
-python3 -m venv venv
+python -m venv venv
 source venv/bin/activate  # if on Windows: venv\Scripts\activate
 ```
 
