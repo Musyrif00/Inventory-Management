@@ -14,7 +14,7 @@ a simple inventory management system built with Django and Django Rest Framework
 
 ### Clone the Repository
 ```sh
-git clone <your-github-repo-url>
+git clone https://github.com/Musyrif00/Inventory-Management.git
 cd inventory_project 
 ```
 
